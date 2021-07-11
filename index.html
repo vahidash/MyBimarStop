@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="rtl" lang="fa">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,121 @@
    <script src="jquery-3.6.0.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <img src="img/bootstrap-logo.svg" alt="" width="30" height="24">
+        <a class="navbar-brand ms-2" href="#">بیمارستاپ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">خانه</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">خدمات</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">پزشکان</a>
+             </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                ورود/ ثبت نام
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">پروفایل من</a></li>
+                <li><a class="dropdown-item" href="#">دیدگاههای من</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">خروج</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+   </nav>
+   
+   <div id="carouselExampleControls" class="carousel slide mt-3" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/d1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/d2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="img/d3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+   </div>
+
+   <div class="container bg-light mt-5">
+      <div class="row align-items-start">
+         <div class="col-md-4">
+            <div class="card m-2" style="width: 18rem;">
+               <img src="img/d4.jpg" class="card-img-top" alt="1st Card">
+               <h5 class="card-title mt-5 mb-0 ms-3">خدمات مناسب</h5>
+               <div class="card-body">
+                 <p class="card-text">بیمارستاپ به شما خدمات شایسته متناسب با هزینه منصفانه پرداختی ارایه می دهد. </p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="card m-2" style="width: 18rem;">
+               <img src="img/d5.png" class="card-img-top" alt="2nd Card">
+               <h5 class="card-title mt-5 mb-0 ms-3">هزینه منصفانه</h5>
+               <div class="card-body">
+                 <p class="card-text">بیمارستاپ هزینه منصفانه بابت ارایه خدمات پیشنهاد میکند به طوری که بیمار و پزشک هر دو از دریافت و ارایه خدمات خشنود باشند.</p>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-4">
+            <div class="card m-2" style="width: 18rem;">
+               <img src="img/d4.jpg" class="card-img-top" alt="1st Card">
+               <h5 class="card-title mt-5 mb-0 ms-3">اخلاق و استاندارد حرفه ای</h5>
+               <div class="card-body">
+                 <p class="card-text">بیمارستاپ در ترویج اخلاق و استانداردهای حرفه سلامت کوشاست و سعی در رعایت و اعمال آن دارد.</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <footer>
+      <div class="container bg-light mt-5">
+         <div class="row">
+            <div class="col-md-4 mt-2">
+               <dt class="dt text-center">نشانی ما</dt>
+               <dd class="dd text-center">خیابان سرخوش، کوی سرمست، کوچه شادمان، ساختمان شادی، واحد 13</dd>
+            </div>
+            <div class="col-md-4 mt-2">
+               <dt class="dt text-center">تلفن ما</dt>
+               <dd class="dd text-center">+98 21 123456789</dd>
+            </div>
+            <div class="col-md-4 mt-2">
+               <dt class="dt text-center">ایمیل ما</dt>
+               <dd class="dd text-center">info@bimarstop.com</dd>
+            </div>
+         </div>
+      </div>
+   </footer>
+   
 </body>
 </html>
